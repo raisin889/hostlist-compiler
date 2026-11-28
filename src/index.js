@@ -41,7 +41,7 @@ function prepareHeader(configuration) {
         lines.push(`! License: ${stripUrlValueCredentials(configuration.license)}`);
     }
 
-    lines.push(`! Last modified: ${(new Date()).toISOString()}`);
+    lines.push(`! Last modified: ${(new Date()).toLocaleString()}`);
     lines.push('!');
 
     // Compiler info

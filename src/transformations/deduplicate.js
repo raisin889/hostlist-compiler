@@ -38,8 +38,8 @@ function deduplicate(rules) {
             filtered.splice(iFiltered, 1);
         } else if (prevRuleRemoved && (ruleUtils.isComment(ruleText) || _.isEmpty(ruleText))) {
             // Remove preceding comments and empty lines
-            consola.debug(`Removing a comment preceding duplicate: ${ruleText}`);
-            filtered.splice(iFiltered, 1);
+            // consola.debug(`Removing a comment preceding duplicate: ${ruleText}`);
+            // filtered.splice(iFiltered, 1);
         } else {
             // Stop removing comments
             prevRuleRemoved = false;

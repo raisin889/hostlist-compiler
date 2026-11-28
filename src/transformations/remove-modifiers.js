@@ -29,13 +29,14 @@ function removeModifiers(rules) {
         }
 
         let modified = false;
-        modified = ruleUtils.removeModifier(props, 'third-party') || modified;
-        modified = ruleUtils.removeModifier(props, '3p') || modified;
+        // modified = ruleUtils.removeModifier(props, 'third-party') || modified;
+        // modified = ruleUtils.removeModifier(props, '3p') || modified;
         modified = ruleUtils.removeModifier(props, 'all') || modified;
         modified = ruleUtils.removeModifier(props, 'document') || modified;
         modified = ruleUtils.removeModifier(props, 'doc') || modified;
-        modified = ruleUtils.removeModifier(props, 'popup') || modified;
-        modified = ruleUtils.removeModifier(props, 'network') || modified;
+        // modified = ruleUtils.removeModifier(props, 'popup') || modified;
+        // modified = ruleUtils.removeModifier(props, 'network') || modified;
+        modified = ruleUtils.removeModifier(props, 'important') || modified;
         filtered.push(ruleUtils.adblockRuleToString(props));
 
         if (modified) {

@@ -3,7 +3,8 @@ const { domainToASCII } = require('url');
 const utils = require('./utils');
 
 // eslint-disable-next-line max-len
-const domainRegex = /^(?=.{1,255}$)[0-9A-Za-z](?:(?:[0-9A-Za-z]|-){0,61}[0-9A-Za-z])?(?:\.[0-9A-Za-z](?:(?:[0-9A-Za-z]|-){0,61}[0-9A-Za-z])?)*\.?$/;
+// const domainRegex = /^(?=.{1,255}$)[0-9A-Za-z](?:(?:[0-9A-Za-z]|-){0,61}[0-9A-Za-z])?(?:\.[0-9A-Za-z](?:(?:[0-9A-Za-z]|-){0,61}[0-9A-Za-z])?)*\.?$/;
+const domainRegex = /^(?=.{1,255}$)[0-9A-Za-z_](?:(?:[0-9A-Za-z_]|-){0,61}[0-9A-Za-z_])?(?:\.[0-9A-Za-z_](?:(?:[0-9A-Za-z_]|-){0,61}[0-9A-Za-z_])?)*\.?$/;
 // An /etc/hosts line: an address, an optional zone identifier, at least one
 // hostname, and an optional comment. The address is a bracketed IPv6 address,
 // an IPv6 address with a mandatory colon, or an IPv4 address. Uppercase hex

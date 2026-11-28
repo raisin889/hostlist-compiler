@@ -1,9 +1,10 @@
 {
-  "name": "@adguard/hostlist-compiler",
+  "name": "hostlist-compiler",
+  "version": "3.0.0",
   "description": "A simple tool that compiles hosts blocklists from multiple sources",
   "main": "src/index.js",
   "types": "src/index.d.ts",
-  "repository": "https://github.com/AdguardTeam/HostlistCompiler",
+  "repository": "https://github.com/raisin889/hostlist-compiler",
   "author": "AdGuard",
   "license": "GPL-3.0",
   "bin": {
